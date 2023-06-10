@@ -40,10 +40,7 @@ function renderCountries(data, page) {
     countryCard.classList.add('country-card');
     countryCard.innerHTML = `
       <img src="${country.flags.svg}" alt="${country.name.common} flag" />
-      <div class="card-text">
-          <h3 class="card-title">${country.name.common}</h3>
-      </div>
-    `;
+       `;
     countryCard.addEventListener('click', () => {
       showPopup(country);
       fetchWeatherData(country.name.common); 
